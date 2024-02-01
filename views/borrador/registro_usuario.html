@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>The Blossom</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="header__grupo1">
+                <div class="header__logo">
+                    <img class="formulario__logo-imagen" src="../imagenes/logo.bmp" alt="The Blossom"
+                        title="The Blossom" />
+                </div>
+                <div class="header__medio">
+                    <h1 class="header__titulo">
+                        "The Blossom moda y comodidad para tí"
+                    </h1>
+                    <form class="header__buscar" action="" method="GET">
+                        <input class="header__buscar-input" type="text" placeholder="Buscar productos" name="buscar"
+                            id="buscar" />
+                        <i class="header-buscar-icono fa fa-search"></i>
+                    </form>
+                </div>
+                <nav class="header__opciones">
+                    <input type="checkbox" name="header__checkbox" id="header__checkbox">
+                    <label for="header__checkbox" class="header__toggle">
+                        <i class="close fa fa-times" aria-hidden="true"></i>
+                        <i class="menu fa fa-bars" aria-hidden="true"></i>
+                    </label>
+                    <ul class="header__opciones-menu">
+                        <a href="#">CREAR CUENTA</a>
+                        <a href="#">INGRESA</a>
+                        <i class="header__carrito-icono fa fa-car" aria-hidden="true"></i>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__grupo2">
+                <nav class="menu">
+                    <a href="#" class="menu__opcion">HOMBRE</a>
+                    <a href="#" class="menu__opcion">MUJER</a>
+                    <a href="#" class="menu__opcion">NIÑOS</a>
+                    <a href="#" class="menu__opcion">DESCUENTOS</a>
+                    <a href="#" class="menu__opcion menu__opcion-azul">MAS CATEGORIAS</a>
+                    <a href="#" class="menu__opcion menu__opcion-azul">CONOCENOS</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="contenedor">
+            <h2 class="main__titulo main__titulo-registrar">Registrate</h2>
+            <form action="" class="formulario" id="formulario">
+                <!-- Grupo: Usuario -->
+                <div class="formulario__grupo" id="grupo__nombres">
+                    <label for="usuario" class="formulario__label">Nombres</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" id="nombres" name="nombres"
+                            placeholder="Juan Carlos">
+                        <i class="formulario__validacion-estado fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="formulario__input-error">Ingrésalo tal como figura en tu documento.</p>
+                </div>
+                <!-- Grupo: Nombre -->
+                <div class="formulario__grupo" id="grupo__apellidos">
+                    <label for="nombre" class="formulario__label">Apellidos</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" id="apellidos" name="apellidos"
+                            placeholder="Rio Gonzalez">
+                        <i class="formulario__validacion-estado fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="formulario__input-error">Ingrésalo tal como figura en tu documento.</p>
+                </div>
+                <!-- Grupo: Contraseña -->
+                <div class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" class="password" name="password" id="password">
+                        <i class="formulario__validacion-estado fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="formulario__input-error">Usa entre 6 y 20 caracteres</p>
+                </div>
+                <!-- Grupo: Contraseña2 -->
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" class="password2" name="password2"
+                            id="password2">
+                        <i class="formulario__validacion-estado fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="formulario__input-error">Ambas contraseñas tienen que ser iguales.</p>
+                </div>
+                <!-- Grupo: Correo Electrónico -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" class="correo" id="correo" name="correo"
+                            placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="formulario__input-error">Correo Electrónico no valido</p>
+                </div>
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" class="telefono" id="telefono" name="telefono"
+                            placeholder="4751234567">
+                        <i class="formulario__validacion-estado fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                    <p class="formulario__input-error">Numero de telefono no valido</p>
+                </div>
+                <!-- Grupo: Terminos y Condiciones -->
+                <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        Declaro que soy mayor de edad, acepto los Términos y Condiciones y autorizo el uso de mis datos
+                        de acuerdo a la Declaración de Privacidad.
+                    </label>
+                </div>
+                <div class="formulario__grupo formulario__grupo-mensaje" id="formulario__mensaje">
+                    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><b>Error: </b>Por favor rellena el
+                        formulario correctamente.</p>
+                </div>
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">REGISTRAR</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">
+                        Formulario enviado exitosamente!
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor__footer contenedor">
+            Todos los derechos reservados a The Blossom
+        </div>
+    </footer>
+    <script src="../js/registro__usuario.js"></script>
+</body>
+
+</html>
